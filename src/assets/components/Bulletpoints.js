@@ -14,7 +14,7 @@ class Bulletpoints extends Component {
         return(
             <section className="bulletPoints">
                 <img src={this.state.background}></img>
-                <div className="row">
+                <div className="column">
                     <h1>Waarom moet u voor ons kiezen?</h1>
                     <ul>
                         <li>Lorem ipsum dolor sit amet.</li>
