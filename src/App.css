@@ -60,6 +60,34 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+@media screen and (max-width: 600px){
+  p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+}
 
 header {
   position: fixed;
@@ -73,18 +101,18 @@ header {
   color: #FA2404;
   z-index: 100;
 }
-#title {
+#company-name {
   padding-left: 1rem;
   margin-left: 5vw;
   border-left: 5px solid #FA2404;
   width: 40%;
   flex-grow: 1;
 }
-#title h3{
+#company-name h3{
   color: #000;
   text-shadow: 2px 2px 1px #ffffff;
 }
-#title h4 {
+#company-name h4 {
   color: inherit;
 }
 nav {
@@ -98,7 +126,7 @@ nav h4 {
   color: inherit;
 }
 @media screen and (max-width: 600px) {
-  #title {
+  #company-name {
     display: none;
   }
   nav {
@@ -266,16 +294,18 @@ footer .socialBtns .icon {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .bulletPoints h1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    align-self: center;
+    margin-left: 0;
   }
   .bulletPoints ul {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0.5rem 0 0.5rem 0;
   }
   .bulletPoints h3 { 
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -327,11 +357,83 @@ footer .socialBtns .icon {
   }
 }
 
+.page-title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.page-title h2 {
+  margin-left: 2rem;
+}
+
 #werkzaamheden, #contact {
   padding-top: 10vh;
 }
+
 #werkzaamheden h3 {
   color: #FA2404;
   margin-top: 1rem;
   text-transform: uppercase;
+}
+#werkzaamheden .text-with-image img {
+  border: 3px solid #707070;
+}
+@media screen and (max-width: 1100px) {
+  #werkzaamheden .text-with-image .text {
+    order: 2;
+  }
+  #werkzaamheden .text-with-image .column:nth-child(2) {
+    order: 1;
+  }
+}
+
+#contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact .row {
+  align-items: stretch;
+}
+#contact .row .column:nth-child(2) {
+  color: #FFFFFF;
+  background-color: #000000;
+  border: 3px solid #FA2404;
+  padding: 1rem 0 1rem 0;
+}
+#contact h3 {
+  color: inherit;
+}
+@media screen and (max-width: 1470px){
+  #contact h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #contact .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact .column {
+    width: 80%;
+  }
+  #contact .row .column:nth-child(2) {
+    margin-top: 2rem;
+  }
+  #contact h3 {
+    padding: 1rem 0 1rem 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contact h3 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  #contact h3 {
+    font-size: 0.8rem;
+  }
 }

@@ -15,7 +15,7 @@ class Header extends Component {
     render() {
         return(
             <header>
-                <div id='title'>
+                <div id='company-name'>
                     <h3>Kars</h3>
                     <h4>Afdichtingstechnieken</h4>
                 </div>
