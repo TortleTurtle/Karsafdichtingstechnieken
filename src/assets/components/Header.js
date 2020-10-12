@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import styled from 'styled-components';
 import '../../App.css';
 
 class Header extends Component {
@@ -22,9 +21,6 @@ class Header extends Component {
                 <nav>
                     <Link style={this.navStyle} to='/'>
                         <h4>home</h4>
-                    </Link>
-                    <Link style={this.navStyle} to='/werkzaamheden'>
-                        <h4>werkzaamheden</h4>
                     </Link>
                     <Link style={this.navStyle} to='/contact'>
                         <h4>contact</h4>

@@ -10,23 +10,25 @@ class Contact extends Component {
 
     render() {
         return (
-            <section id='contact'>
-                <div className="wrapper">
-                    <div className="page-title">
-                        <h2>Contact</h2>
-                    </div>
-                    <div className='row'>
-                        <div className="column text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nihil commodi distinctio, ut dolore, mollitia velit, architecto reiciendis tempora obcaecati incidunt. Temporibus, aperiam a ipsam autem eos quasi quis neque itaque possimus tempora labore sit unde voluptatum, corporis magnam, cumque reprehenderit necessitatibus consequatur nisi dignissimos laudantium. Commodi quidem ducimus voluptates vero sapiente cupiditate pariatur sequi totam repellat neque enim saepe, ab sint dolores, dolor ipsam quis, eaque quam. Vitae voluptates ipsum ab qui itaque rerum temporibus? Aliquid vel quidem placeat, amet blanditiis saepe voluptatem non fugit nemo doloremque error modi dolor similique, fugiat consequatur distinctio, cupiditate rerum animi! Pariatur, ullam?</p>
-                        </div>
-                        <div className="column">
-                            <h3><FontAwesomeIcon icon={faEnvelope}/> info@karsafdichtingstechnieken.nl</h3>
-                            <h3><FontAwesomeIcon icon={faMobileAlt}/> 06-15564797</h3>
-                            <h3><FontAwesomeIcon icon={faFax}/> 06-5260995</h3>
-                        </div>
-                    </div>
+          <section id="contact">
+            <div className="wrapper">
+              <div className="page-title">
+                <h2>Contact</h2>
+              </div>
+              <div className="row">
+                <div className="column text">
+                  <p>
+                    Hier kunt u onze contactinformatie vinden. Wij proberen zo snel mogelijk te reageren.
+                  </p>
                 </div>
-            </section>
+                <div className="column">
+                  <h3><FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:info@karsafdichtingstechnieken.nl">info@karsafdichtingstechnieken.nl</a></h3>
+                  <h3><FontAwesomeIcon icon={faMobileAlt} /> <a href="tel:+31615564767">+31 6 15564767</a></h3>
+                  <h3>Administratie: <a href="tel:+31652609695">+31 6 5260995</a></h3>
+                </div>
+              </div>
+            </div>
+          </section>
         );
     }
 }

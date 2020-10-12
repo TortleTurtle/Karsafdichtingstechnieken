@@ -19,7 +19,6 @@ class App extends Component {
         <Header/>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/werkzaamheden" component={Werkzaamheden} />
           <Route path="/contact" component={Contact} />
         </Switch>
         <Footer/>

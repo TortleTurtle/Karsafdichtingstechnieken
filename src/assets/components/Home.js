@@ -14,18 +14,37 @@ class Home extends Component {
   render() {
     return (
       <div id="Home">
-        <Banner id="mainBanner" background={require('../images/Banner.jpg')} title="Welkom" />
+        <Banner
+          id="mainBanner"
+          background={require("../images/Banner.jpg")}
+          title="Welkom"
+        />
         <section className="row text-with-image" id="intro">
           <div className="column text">
-            <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, beatae blanditiis. Tempore debitis sed aspernatur, maiores asperiores repellendus sunt adipisci ut facilis fugit, enim aut at voluptatem non maxime soluta magni aperiam cum laborum consectetur fugiat minus id rem? Perspiciatis delectus nisi odio, commodi possimus sit vel dolorum maxime suscipit veniam consequuntur vero adipisci a ipsam est libero ullam beatae provident incidunt doloribus accusantium amet assumenda reiciendis! Quia nostrum inventore quae minima voluptatem consequuntur, maxime quisquam hic reiciendis molestiae libero odio consequatur facilis. Eligendi molestias qui obcaecati reprehenderit quo quae, debitis facilis ullam sint cum at, iure delectus consectetur vero.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus facere amet sint tenetur voluptatum! Reiciendis nisi ipsa quam accusamus perspiciatis ut sunt ratione fuga magnam, necessitatibus dolorem maiores, delectus magni corporis placeat illo, neque temporibus reprehenderit sequi. Libero suscipit debitis mollitia? Nam cumque, eos officiis laboriosam vero autem mollitia ex possimus. Porro voluptates illo tempore ea id consequatur sit esse numquam dolore minus fugit fuga ad, similique debitis voluptas atque vel laborum totam eligendi dicta explicabo? Laborum autem odit quaerat, cumque minima at id. Rerum nemo illo tempore reprehenderit quas dolores, alias unde sapiente possimus illum nobis? Voluptatem, at sed?</p>
+            <h2>Over ons</h2>
+            <p>
+              Kars Afdichtingstechnieken is uw betrouwbare partner voor
+              afdichtings werkzaamheden. Van gevel tot vloer en van badkamer tot
+              zwembad kitten wij alles netjes af. Door onze jarenlange ervaring
+              en voortdurende bijscholing in nieuwe technieken is uw pand bij
+              ons in veilige handen.
+            </p>
+            <p>
+              Wij werken voor zowel zakelijke klanten als particulieren met
+              duurzame producten tegen een lage kostprijs. Een nette afronding
+              van een toilet of keuken mag immers nooit meer kosten dan de
+              ruimte zelf. Wij geloven in duurzaamheid van zowel ons materiaal
+              en vakmanschap als in het contact naar u. Begeleiding kent daarom
+              niet alleen een voortraject, maar -indien gewenst- ook open
+              communicatie na afloop van de werkzaamheden. Wij denken graag en enthousiast met u mee!
+              </p>
+              <h3>Kars Afdichtingstechnieken: service of anders niks!</h3>
           </div>
           <div className="column image">
-            <img className="portrait" src={require('../images/kars.jpg')}></img>
+            <img className="portrait" src={require("../images/kars.jpg")}></img>
           </div>
         </section>
-        <Bulletpoints background={require('../images/Banner_2.jpg')} />
+        <Bulletpoints background={require("../images/Banner_2.jpg")} />
         <MediaFeed />
       </div>
     );

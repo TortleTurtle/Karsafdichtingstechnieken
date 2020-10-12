@@ -30,7 +30,6 @@ class Werkzaamheden extends Component {
                         <img src={require('../images/Kitspuit.jpg')} alt="Een kitspuit"></img>
                     </div>
                 </div>
-                <MediaFeed/>
             </section>
         );
     }
